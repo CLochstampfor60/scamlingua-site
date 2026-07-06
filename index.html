@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Security policy: locked to self-hosted assets + Google Fonts only. No inline scripts, no external scripts, no frames, no form targets. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+
+<!-- Identity-first metadata: abuse scanners and search engines see the academic context before the brand name -->
+<title>ScamLingua — Academic Research on Scam Detection | Synthetic Data for Elder Fraud Prevention (ODU / CNU)</title>
+<meta name="description" content="ScamLingua is a university research project (Old Dominion University / Christopher Newport University) studying the language of scams to build AI that detects and prevents fraud against older adults. All datasets are fully synthetic and AI-generated — no real people, no real data. We do not send, facilitate, or endorse scams.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="ScamLingua — Academic Research on Scam Detection">
+<meta property="og:description" content="A university research project studying the language of scams to build AI that detects fraud against older adults. All datasets are fully synthetic — no real people, no real data.">
+<meta property="og:url" content="https://scamlingua.org/">
+<meta property="og:site_name" content="ScamLingua — Academic Research Project">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ScamLingua — Academic Research on Scam Detection">
+<meta name="twitter:description" content="University research project (ODU/CNU) building AI that detects fraud against older adults. All data fully synthetic — no real people, no real data.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://scamlingua.org/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+
+<!-- Structured data: identifies the dataset and its academic provenance to machines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "COVA-X: Synthetic Conversational Scam Dataset",
+  "description": "A fully synthetic, AI-generated dataset of approximately 11,000 multi-turn scam conversations targeting older adults, created for defensive scam-detection research. Contains no real people and no real data.",
+  "url": "https://scamlingua.org/",
+  "sameAs": ["https://arxiv.org/abs/2606.06879", "https://arxiv.org/abs/2604.11752"],
+  "isAccessibleForFree": true,
+  "conditionsOfAccess": "Access by request. Citation required. Non-commercial research use only. No redistribution.",
+  "creator": [
+    { "@type": "Person", "name": "Carl Lochstampfor", "affiliation": { "@type": "CollegeOrUniversity", "name": "Old Dominion University", "url": "https://www.odu.edu" } },
+    { "@type": "Person", "name": "Ayan Roy", "affiliation": { "@type": "CollegeOrUniversity", "name": "Christopher Newport University", "url": "https://cnu.edu" } }
+  ],
+  "citation": "Lochstampfor, C., & Roy, A. (2026). COVA-X. arXiv:2606.06879. https://arxiv.org/abs/2606.06879"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Theme init runs before paint to prevent a flash of the wrong theme. External file to satisfy script-src 'self'. -->
+<script src="theme.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <button id="theme-toggle" type="button" aria-label="Switch between light and dark mode" title="Light / dark mode">
+      <span class="icon-light" aria-hidden="true">&#9728;</span><span class="icon-dark" aria-hidden="true">&#9789;</span>
+    </button>
+
+    <p class="eyebrow">Academic research project &middot; Old Dominion University &amp; Christopher Newport University</p>
+
+    <h1>ScamLingua — Academic Research on Scam Detection</h1>
+
+    <p class="subhead">
+      A university research project studying the language of scams to build AI that detects
+      and prevents fraud against older adults. <strong>We do not send, facilitate, or endorse scams.</strong>
+    </p>
+
+    <div class="synthetic-notice" role="note">
+      <span class="label">Data disclosure</span>
+      All datasets are fully synthetic and AI-generated — no real people, no real data.
+    </div>
+
+    <dl class="trust">
+      <div>
+        <dt>Researchers</dt>
+        <dd>
+          <ul>
+            <li>Carl Lochstampfor, <a href="https://www.odu.edu" target="_blank" rel="noopener noreferrer">Old Dominion University</a></li>
+            <li>Dr. Ayan Roy, <a href="https://cnu.edu" target="_blank" rel="noopener noreferrer">Christopher Newport University</a></li>
+          </ul>
+        </dd>
+      </div>
+      <div>
+        <dt>Publications</dt>
+        <dd>
+          <ul>
+            <li><a href="https://arxiv.org/abs/2606.06879" target="_blank" rel="noopener noreferrer">COVA-X: An Expanded Synthetic Conversation Dataset for Multi-Turn Smishing Detection</a> (arXiv:2606.06879)</li>
+            <li><a href="https://arxiv.org/abs/2604.11752" target="_blank" rel="noopener noreferrer">A Synthetic Conversational Smishing Dataset for Social Engineering Detection</a> (arXiv:2604.11752)</li>
+          </ul>
+        </dd>
+      </div>
+      <div>
+        <dt>Contact</dt>
+        <dd>
+          <ul>
+            <li>Academic: <a href="mailto:cloch001@odu.edu">cloch001@odu.edu</a></li>
+            <li>Dataset requests: <a href="mailto:contact@scamlingua.org">contact@scamlingua.org</a></li>
+          </ul>
+        </dd>
+      </div>
+    </dl>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section>
+      <h2>What is COVA-X?</h2>
+      <p>
+        COVA-X is a fully synthetic dataset of approximately 11,000 AI-generated, multi-turn
+        scam conversations modeled on fraud techniques used against older adults. It exists for
+        one purpose: to help researchers build and evaluate systems that <em>detect</em> social-engineering
+        fraud. Every conversation is machine-generated — no real victims, no real communications,
+        and no personal data of any kind.
+      </p>
+      <p>
+        Generation runs entirely on local, offline research hardware using an open-weight
+        language model (Qwen 2.5 14B via Ollama) — no cloud services and no third-party data
+        exposure at any stage. The full methodology, generation pipeline, and quality-assurance
+        process are documented in the peer-submitted papers linked above.
+      </p>
+      <p>
+        Each record carries structured metadata alongside the dialogue — scam type, outcome
+        label, turn count, victim parameters, and data-quality flags:
+      </p>
+      <div class="sample-record" aria-label="Illustrative record structure">{
+  <span class="k">"conversation_id"</span>: <span class="v">"bank_20260214_..."</span>,
+  <span class="k">"scam_type"</span>:       <span class="v">"bank_impersonation"</span>,
+  <span class="k">"outcome_label"</span>:   <span class="v">"verification_attempt"</span>,
+  <span class="k">"total_turns"</span>:     <span class="v">13</span>,
+  <span class="k">"victim_age_range"</span>: <span class="v">"70-74"</span>,
+  <span class="k">"model"</span>:           <span class="v">"qwen2.5:14b (local)"</span>,
+  <span class="k">"legacy_contamination"</span>: <span class="v">false</span>,
+  <span class="k">"turns"</span>: [ <span class="v">...synthetic dialogue...</span> ]
+}</div>
+      <p class="sample-caption">Illustrative structure only — field names and format match the dataset; values shown are placeholders. Full schema documentation accompanies each data distribution.</p>
+    </section>
+
+    <section>
+      <div class="request-card">
+        <h2>Requesting access</h2>
+        <p>The dataset is shared by request with researchers and organizations working on fraud detection and prevention.</p>
+        <ol>
+          <li>Email <a href="mailto:contact@scamlingua.org">contact@scamlingua.org</a> with your name, institutional affiliation, and a brief description of your intended use.</li>
+          <li>Access is granted for non-commercial research use. Redistribution is not permitted.</li>
+          <li>Any publication or product of research using the dataset must cite the reference below.</li>
+        </ol>
+        <div class="citation-block">
+          <strong>Lochstampfor, C., &amp; Roy, A. (2026). COVA-X. arXiv:2606.06879.<br>
+          https://arxiv.org/abs/2606.06879</strong>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+
+    <section>
+      <h2>Synthetic-data statement</h2>
+      <p>
+        All conversational data distributed by this project is entirely synthetic, produced by
+        a locally hosted open-weight large language model (Qwen 2.5) under controlled research
+        conditions. No conversation in any ScamLingua dataset originates from, records, or
+        reproduces a real communication. No real person's identity, contact information,
+        financial details, or personal circumstances appear in the data. Names, scenarios, and
+        dialogue are fictional constructions generated for research purposes.
+      </p>
+    </section>
+
+    <section>
+      <h2>Institutional references</h2>
+      <p>
+        References to government agencies, financial institutions, healthcare programs, or other
+        real organizations within the data exist solely to model the fraud techniques that
+        criminals use when impersonating them. Any resemblance to actual entities, communications,
+        or events is coincidental and fictional. No affiliation with, or endorsement by, any
+        referenced institution exists or is implied.
+      </p>
+    </section>
+
+    <section>
+      <h2>Responsible use</h2>
+      <p>
+        This dataset is provided exclusively for defensive research: detection, prevention,
+        education, and the protection of potential victims. It is not to be used to create,
+        refine, train, or deploy actual scams, or to facilitate fraud of any kind. To report
+        suspected misuse of this data or this project's name, contact
+        <a href="mailto:contact@scamlingua.org">contact@scamlingua.org</a>.
+      </p>
+      <p>
+        The COVA-X dataset is provided "as is," for research purposes, without warranty of any
+        kind. The authors are not liable for any damages or outcomes arising from its use.
+      </p>
+    </section>
+
+    <p class="footer-meta">
+      &copy; 2026 ScamLingua &middot; Carl Lochstampfor (<a href="https://www.odu.edu" target="_blank" rel="noopener noreferrer">Old Dominion University</a>) &amp; Dr. Ayan Roy (<a href="https://cnu.edu" target="_blank" rel="noopener noreferrer">Christopher Newport University</a>).
+      <br> Cite as: <strong>Lochstampfor, C., &amp; Roy, A. (2026). COVA-X. arXiv:2606.06879. https://arxiv.org/abs/2606.06879</strong></br>
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>

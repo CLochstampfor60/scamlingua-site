@@ -1,0 +1,6 @@
+# ScamLingua — academic research project (ODU/CNU)
+# https://scamlingua.org — fully synthetic scam-detection research data
+User-agent: *
+Allow: /
+
+Sitemap: https://scamlingua.org/sitemap.xml
