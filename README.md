@@ -43,7 +43,7 @@ No build step, no dependencies, no frameworks — plain HTML/CSS/JS.
   Dataset for Social Engineering Detection.*
   [arXiv:2604.11752](https://arxiv.org/abs/2604.11752)
 
-## Contact
+## Contact (<b>Attn: Carl Lochstampfor)</b>
 
 - **Dataset access requests:** requests@scamlingua.org — request a copy of the COVA-X dataset
 - **General questions about COVA-X:** contact@scamlingua.org — questions about the project or dataset
