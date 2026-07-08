@@ -88,6 +88,17 @@ html:not([data-theme]) .icon-light{display:none}
   html:not([data-theme]) .icon-light{display:inline}
 }
 
+/* ---------- Brand logo ---------- */
+.brand{margin:0 0 1.4rem}
+.brand img{display:block;height:52px;width:auto;max-width:100%}
+html[data-theme="dark"] .logo-light{display:none}
+html[data-theme="light"] .logo-dark{display:none}
+html:not([data-theme]) .logo-dark{display:none}
+@media (prefers-color-scheme: dark){
+  html:not([data-theme]) .logo-light{display:none}
+  html:not([data-theme]) .logo-dark{display:block}
+}
+
 /* ---------- Hero: the disclosure IS the hero ---------- */
 header{padding:3.5rem 0 2.75rem;border-bottom:1px solid var(--line);background:var(--card)}
 .eyebrow{
@@ -215,6 +226,7 @@ footer p{line-height:1.75}
 /* ---------- Mobile refinements ---------- */
 @media (max-width: 480px){
   header{padding:2.5rem 0 2rem}
+  .brand img{height:38px}
   #theme-toggle{margin-top:-.75rem}
   body{font-size:1rem}
   .subhead{font-size:1.0625rem}
