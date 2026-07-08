@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="scamlingua_logo_dark.png">
+  <img src="scamlingua_logo.png" alt="ScamLingua" width="420">
+</picture>
+
 # ScamLingua — scamlingua.org
 
 Public disclosure page for **ScamLingua**, an academic research project by
@@ -22,8 +27,10 @@ from the research pipeline, or generated conversations.
 | `index.html` | Single-page disclosure site |
 | `styles.css` | Styling (light/dark themes) |
 | `theme.js` | Light/dark mode toggle |
-| `favicon.svg` | Browser tab icon |
+| `favicon.png` | Browser tab icon (SL shield) |
+| `scamlingua_logo.png` / `scamlingua_logo_dark.png` | Wordmark logo (light / dark theme) |
 | `robots.txt` / `sitemap.xml` | Crawler configuration |
+| `CNAME` | GitHub Pages custom-domain binding |
 
 No build step, no dependencies, no frameworks — plain HTML/CSS/JS.
 
@@ -36,9 +43,15 @@ No build step, no dependencies, no frameworks — plain HTML/CSS/JS.
   Dataset for Social Engineering Detection.*
   [arXiv:2604.11752](https://arxiv.org/abs/2604.11752)
 
+## Contact
+
+- **Dataset access requests:** requests@scamlingua.org — request a copy of the COVA-X dataset
+- **General questions about COVA-X:** contact@scamlingua.org — questions about the project or dataset
+- **Academic & research inquiries:** cloch001@odu.edu — collaboration or correspondence with the researcher
+
 ## Dataset access
 
-**Dataset requests are accepted exclusively at contact@scamlingua.org.**
+**Dataset requests are accepted exclusively at requests@scamlingua.org.**
 Requests made through GitHub — issues, pull requests, or otherwise — will
 not receive a response. Access is granted by request for non-commercial
 research use; redistribution is not permitted; citation is required:
@@ -59,7 +72,9 @@ suspected misuse of the data or of this project's name, contact
 The website code in this repository (HTML/CSS/JS) is released under the
 [MIT License](LICENSE). This license covers the website source only — it
 does **not** apply to the COVA-X dataset or any research materials, which
-are distributed separately under the terms described above.
+are distributed separately under the terms described above. The ScamLingua
+name and logo are project identifiers and are not covered by the MIT
+license.
 
 ---
 
