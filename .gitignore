@@ -1,0 +1,20 @@
+# design-references — personal reference repo
+# The repo IS the content (markdown notes + screenshots). Very little to ignore.
+
+# ---- OS cruft ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Editor / IDE ----
+.vscode/
+.idea/
+*.swp
+
+# ---- Stray local scratch ----
+*.tmp
+*~
+*.bak
+
+# ---- Internal prompt / working docs (not project docs) ----
+internal_docs
