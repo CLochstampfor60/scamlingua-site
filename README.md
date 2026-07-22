@@ -29,10 +29,13 @@ from the research pipeline, or generated conversations.
 | `theme.js` | Light/dark mode toggle |
 | `favicon.png` | Browser tab icon (SL shield) |
 | `scamlingua_logo.png` / `scamlingua_logo_dark.png` | Wordmark logo (light / dark theme) |
+| `og-card.png` | Social share card (Open Graph / link previews) |
 | `robots.txt` / `sitemap.xml` | Crawler configuration |
 | `CNAME` | GitHub Pages custom-domain binding |
+| `CHANGELOG.md` | Notable changes to the site |
 
-No build step, no dependencies, no frameworks — plain HTML/CSS/JS.
+No build step, no frameworks — plain HTML/CSS/JS. External services: Google
+Fonts and GoatCounter analytics (see below).
 
 ## Publications
 
@@ -43,7 +46,7 @@ No build step, no dependencies, no frameworks — plain HTML/CSS/JS.
   Dataset for Social Engineering Detection.*
   [arXiv:2604.11752](https://arxiv.org/abs/2604.11752)
 
-## Contact (<b>Attn: Carl Lochstampfor)</b>
+## Contact (Attn: Carl Lochstampfor)
 
 - **Dataset access requests:** requests@scamlingua.org — request a copy of the COVA-X dataset
 - **General questions about COVA-X:** contact@scamlingua.org — questions about the project or dataset
@@ -66,6 +69,17 @@ prevention, education, and the protection of potential victims. It is not to
 be used to create, refine, train, or deploy actual scams. To report
 suspected misuse of the data or of this project's name, contact
 **contact@scamlingua.org**.
+
+## Analytics & privacy
+
+This site uses [GoatCounter](https://www.goatcounter.com) — a privacy-first,
+open-source, cookieless analytics service. No cookies are set, no personal
+data is collected, and no consent banner is required. Aggregate visit counts
+only; the dashboard is private.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for notable changes to the site.
 
 ## License
 
