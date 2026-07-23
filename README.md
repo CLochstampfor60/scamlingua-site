@@ -79,7 +79,7 @@ only; the dashboard is private.
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for notable changes to the site.
+See [CHANGELOG_scamlingua.md](CHANGELOG_scamlingua.md) for notable changes to the site.
 
 ## License
 
