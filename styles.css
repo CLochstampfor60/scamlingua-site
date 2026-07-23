@@ -211,10 +211,17 @@ p + p{margin-top:.75rem}
 .request-card li{margin-bottom:.4rem}
 .request-card li::marker{color:var(--gold);font-weight:600}
 .response-note{
-  font-size:.875rem;         /* smaller than the 1.0625rem body */
-  color:var(--muted);        /* secondary, lower-contrast — still AA on the card */
-  margin-top:.9rem;
+  font-size:1.125rem;        /* larger than the 1.0625rem body so it stands out */
+  font-weight:600;
+  text-align:center;
+  color:var(--ink);          /* full-contrast so the expectation is hard to miss */
+  margin-top:1.25rem;
   line-height:1.55;
+  padding:.9rem 1.1rem;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-left:4px solid var(--gold);
+  border-radius:6px;
 }
 
 .citation-block{

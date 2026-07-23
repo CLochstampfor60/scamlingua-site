@@ -3,6 +3,13 @@
 All notable changes to the ScamLingua disclosure site. Format: dated entries, newest first.
 (Repository history: `git log`. This file summarizes user-visible and structural changes.)
 
+## 2026-07-23
+- **Response-time note promoted to a callout** in the requesting-access card: re-styled `.response-note`
+  from muted secondary text to a centered, full-contrast (`--ink`) callout — larger type (1.125rem, 600
+  weight), padding, and a gold-accented left border matching `.citation-block` — so the review-alignment
+  and 24–72 hour expectation is harder to miss. Sentences split onto two lines (`<br>`); "at least 24–72
+  hours" underlined for emphasis.
+
 ## 2026-07-22
 - **UI/UX pass (UI-UX-Pro-Max review):**
   - Added a **primary hero call-to-action** ("Request dataset access →") anchored to the requesting-access section, so the core action is surfaced above the trust details.
