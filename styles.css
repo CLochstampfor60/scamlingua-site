@@ -62,6 +62,31 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
 
 .wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
 
+/* ---------- Skip link (accessibility) ---------- */
+.skip-link{
+  position:absolute;left:.75rem;top:.75rem;z-index:1000;
+  background:var(--ink);color:var(--paper);
+  font-family:"Source Sans 3",system-ui,sans-serif;font-weight:600;
+  padding:.6rem 1rem;border-radius:6px;text-decoration:none;
+  transform:translateY(-180%);
+  transition:transform .15s ease;
+}
+.skip-link:focus{transform:translateY(0);outline:2px solid var(--gold);outline-offset:2px}
+main:focus-visible{outline:none}   /* programmatic focus target — no visible ring */
+
+/* ---------- Primary call-to-action ---------- */
+.cta-row{margin:0 0 1.5rem}
+.cta{
+  display:inline-block;
+  background:var(--ink);color:var(--card);
+  font-family:"Source Sans 3",system-ui,sans-serif;font-weight:600;font-size:1rem;
+  text-decoration:none;
+  padding:.7rem 1.3rem;border-radius:8px;border:1px solid var(--ink);
+  transition:box-shadow .15s ease,transform .15s ease;
+}
+.cta:hover{color:var(--card);box-shadow:0 0 0 3px var(--gold);transform:translateY(-1px)}
+.cta:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
 /* ---------- Theme toggle ---------- */
 #theme-toggle{
   float:right;
@@ -185,6 +210,12 @@ p + p{margin-top:.75rem}
 .request-card ol{margin:.6rem 0 0 1.25rem}
 .request-card li{margin-bottom:.4rem}
 .request-card li::marker{color:var(--gold);font-weight:600}
+.response-note{
+  font-size:.875rem;         /* smaller than the 1.0625rem body */
+  color:var(--muted);        /* secondary, lower-contrast — still AA on the card */
+  margin-top:.9rem;
+  line-height:1.55;
+}
 
 .citation-block{
   font-family:"IBM Plex Mono",monospace;
@@ -199,6 +230,17 @@ p + p{margin-top:.75rem}
   overflow-wrap:break-word;
 }
 .citation-block strong{font-weight:500} /* Plex Mono 500 reads as bold at this size */
+
+/* ---------- Pipeline methodology figure ---------- */
+/* Diagram is composited on white so it stays legible in both light and dark themes. */
+.pipeline-figure{margin:1.25rem 0 .25rem}
+.pipeline-figure img{
+  display:block;width:100%;height:auto;
+  background:#fff;border:1px solid var(--line);border-radius:8px;padding:.75rem;
+}
+.pipeline-figure figcaption{
+  font-size:.8125rem;color:var(--muted);margin-top:.6rem;line-height:1.55;
+}
 
 /* ---------- Footer fine print ---------- */
 footer{
@@ -238,7 +280,7 @@ footer p{line-height:1.75}
 
 /* ---------- Print ---------- */
 @media print{
-  #theme-toggle{display:none}
+  #theme-toggle,.skip-link,.cta{display:none}
   body{background:#fff;color:#000}
   header,footer,.request-card{background:#fff}
   a{color:#000;text-decoration:underline}

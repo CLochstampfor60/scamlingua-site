@@ -66,6 +66,8 @@
 
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <header>
   <div class="wrap">
     <button id="theme-toggle" type="button" aria-label="Switch between light and dark mode" title="Light / dark mode">
@@ -90,6 +92,8 @@
       <span class="label">Data disclosure</span>
       All datasets are fully synthetic and AI-generated — no real people, no real data.
     </div>
+
+    <p class="cta-row"><a class="cta" href="#request">Request dataset access &rarr;</a></p>
 
     <dl class="trust">
       <div>
@@ -124,7 +128,7 @@
   </div>
 </header>
 
-<main>
+<main id="main" tabindex="-1">
   <div class="wrap">
 
     <section>
@@ -142,6 +146,11 @@
         exposure at any stage. The full methodology, generation pipeline, and quality-assurance
         process are documented in the peer-submitted papers linked above.
       </p>
+      <figure class="pipeline-figure">
+        <img src="cova_pipeline_architecture.webp" width="1600" height="1033" loading="lazy" decoding="async"
+             alt="COVA-X generation pipeline: prompt templates feed a locally hosted Qwen 2.5 14B language model that drives a multi-agent attacker and victim dialogue loop; a quality pipeline then applies contamination scanning, stage-direction stripping, and automated relabeling to produce the labeled synthetic dataset.">
+        <figcaption>Generation methodology: prompt templates &rarr; local LLM (Qwen&nbsp;2.5&nbsp;14B) &rarr; multi-agent dialogue &rarr; quality pipeline &rarr; labeled synthetic dataset.</figcaption>
+      </figure>
       <p>
         Each record carries structured metadata alongside the dialogue — scam type, outcome
         label, turn count, victim parameters, and data-quality flags:
@@ -159,7 +168,7 @@
       <p class="sample-caption">Illustrative structure only — field names and format match the dataset; values shown are placeholders. Full schema documentation accompanies each data distribution.</p>
     </section>
 
-    <section>
+    <section id="request">
       <div class="request-card">
         <h2>Requesting access</h2>
         <p>The dataset is shared by request with researchers and organizations working on fraud detection and prevention.</p>
@@ -168,6 +177,7 @@
           <li>Access is granted for non-commercial research use. Redistribution is not permitted.</li>
           <li>Any publication or product of research using the dataset must cite the reference below.</li>
         </ol>
+        <p class="response-note">All requests are reviewed for research alignment. Please allow at least 24–72 hours for a response.</p>
         <div class="citation-block">
           <strong>Lochstampfor, C., &amp; Roy, A. (2026). COVA-X. arXiv:2606.06879.<br>
           https://arxiv.org/abs/2606.06879</strong>
