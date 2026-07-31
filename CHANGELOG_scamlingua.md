@@ -3,6 +3,18 @@
 All notable changes to the ScamLingua disclosure site. Format: dated entries, newest first.
 (Repository history: `git log`. This file summarizes user-visible and structural changes.)
 
+## 2026-07-30
+- **Verification fast-lane tip added** to the requesting-access card (`.verification-note`, between
+  the request steps and the response-time callout): requests from institutional email addresses are
+  processed fastest; students encouraged to CC their supervising professor; personal-email requests
+  welcome but may involve a brief affiliation follow-up. Formalizes the two-tier verification
+  doctrine (self-verifiable footprint vs. institution-verified via domain + advisor confirmation)
+  without imposing a social-media or hard-documentation requirement on requesters.
+- Styling: `--badge-bg` background with blue `--accent` left border — deliberately one register
+  quieter than the gold-flagged callouts (`.response-note`, `.citation-block`) to preserve the
+  gold = must-read / blue = informational hierarchy. No CSP change; no mobile override needed
+  (inherits request-card padding).
+
 ## 2026-07-23
 - **Response-time note promoted to a callout** in the requesting-access card: re-styled `.response-note`
   from muted secondary text to a centered, full-contrast (`--ink`) callout — larger type (1.125rem, 600

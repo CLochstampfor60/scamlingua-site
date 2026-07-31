@@ -210,6 +210,18 @@ p + p{margin-top:.75rem}
 .request-card ol{margin:.6rem 0 0 1.25rem}
 .request-card li{margin-bottom:.4rem}
 .request-card li::marker{color:var(--gold);font-weight:600}
+.verification-note{
+  font-size:.9375rem;
+  color:var(--body);
+  margin-top:1rem;
+  line-height:1.6;
+  padding:.8rem 1.1rem;
+  background:var(--badge-bg);
+  border:1px solid var(--line);
+  border-left:4px solid var(--accent);
+  border-radius:6px;
+}
+.verification-note strong{color:var(--ink)}
 .response-note{
   font-size:1.125rem;        /* larger than the 1.0625rem body so it stands out */
   font-weight:600;
