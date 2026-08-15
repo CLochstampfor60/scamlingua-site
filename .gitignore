@@ -1,5 +1,5 @@
-# design-references — personal reference repo
-# The repo IS the content (markdown notes + screenshots). Very little to ignore.
+# scamlingua-site — static disclosure site served via GitHub Pages.
+# The repo IS the deployed content, so very little to ignore.
 
 # ---- OS cruft ----
 .DS_Store

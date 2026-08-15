@@ -16,6 +16,16 @@ adults.
 
 **Live site:** https://scamlingua.org
 
+## Status notice
+
+COVA-X is a **synthetic research dataset** — every conversation is
+machine-generated, and it contains no real victim data. It is released for
+non-commercial research use under the access terms below. It is **not** a
+certified benchmark, a safety or detection product, or legal and compliance
+advice, and it carries no regulatory standing. It is published as independent
+academic research by Carl Lochstampfor (Old Dominion University) and
+Dr. Ayan Roy (Christopher Newport University).
+
 ## What this repository is (and isn't)
 
 This repository contains **only the static website** served at scamlingua.org
@@ -25,14 +35,16 @@ from the research pipeline, or generated conversations.
 | File | Purpose |
 |---|---|
 | `index.html` | Single-page disclosure site |
-| `styles.css` | Styling (light/dark themes) |
+| `styles.css` | Styling (light/dark themes, design tokens, type scale) |
 | `theme.js` | Light/dark mode toggle |
 | `favicon.png` | Browser tab icon (SL shield) |
 | `scamlingua_logo.png` / `scamlingua_logo_dark.png` | Wordmark logo (light / dark theme) |
+| `cova_pipeline_architecture.webp` | Generation-methodology figure shown on the page |
 | `og-card.png` | Social share card (Open Graph / link previews) |
 | `robots.txt` / `sitemap.xml` | Crawler configuration |
 | `CNAME` | GitHub Pages custom-domain binding |
-| `CHANGELOG.md` | Notable changes to the site |
+| `CHANGELOG_scamlingua.md` | Notable changes to the site |
+| `LICENSE` | MIT license covering the website source only |
 
 No build step, no frameworks — plain HTML/CSS/JS. External services: Google
 Fonts and GoatCounter analytics (see below).

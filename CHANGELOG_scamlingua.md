@@ -71,6 +71,18 @@ All notable changes to the ScamLingua disclosure site. Format: dated entries, ne
   tracking and color — weight is the only variable carrying the rank. Revert to 600 if they read as
   too recessive next to the header's other elements.
 
+- **Repository docs corrected.**
+  - **`LICENSE` added (MIT, © 2026 Carl Lochstampfor).** The README had claimed MIT and linked to
+    `LICENSE` since the repo was created, but the file was never committed — a broken link on GitHub
+    and a license claim resolving to nothing. Covers the website source only; the COVA-X dataset and
+    research materials remain separately distributed under the access terms in the README.
+  - README file table: `CHANGELOG.md` → `CHANGELOG_scamlingua.md` (wrong filename — the body link was
+    already correct); added the missing `cova_pipeline_architecture.webp` and `LICENSE` rows.
+  - README: **status notice mirrored** from the site as its own section, since downstream researchers
+    reach the repo directly and the framing should not depend on landing on scamlingua.org first.
+  - `.gitignore` header comment said "design-references — personal reference repo," copy-pasted from
+    another repo. Corrected to describe this one.
+
 ### Parking lot (not built — recorded for future reference)
 - **Separate dataset page.** Considered 2026-08-15 while placing the status notice. Deferred: the
   site is a single `index.html`, so the one notice above "What is COVA-X?" covers both the landing
