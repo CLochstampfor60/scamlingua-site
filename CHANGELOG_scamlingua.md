@@ -3,6 +3,12 @@
 All notable changes to the ScamLingua disclosure site. Format: dated entries, newest first.
 (Repository history: `git log`. This file summarizes user-visible and structural changes.)
 
+## 2026-08-26
+- **Step 2 of requesting-access tightened** to "non-commercial, defensive research use — detection,
+  prevention, and evaluation" with an anchor link to the footer Responsible-use section
+  (`id="responsible-use"` added) — surfaces the existing TERMS dual-use restriction at the
+  point of request.
+
 ## 2026-08-15
 - **Status notice added** at the top of `<main>`, above "What is COVA-X?" (`.status-notice`, `role="note"`):
   one short paragraph stating what the artifact is (synthetic research dataset, no real victim data,
