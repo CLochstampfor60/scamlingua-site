@@ -43,7 +43,6 @@ from the research pipeline, or generated conversations.
 | `og-card.png` | Social share card (Open Graph / link previews) |
 | `robots.txt` / `sitemap.xml` | Crawler configuration |
 | `CNAME` | GitHub Pages custom-domain binding |
-| `CHANGELOG_scamlingua.md` | Notable changes to the site |
 | `LICENSE` | MIT license covering the website source only |
 
 No build step, no frameworks — plain HTML/CSS/JS. External services: Google
@@ -91,7 +90,8 @@ only; the dashboard is private.
 
 ## Changelog
 
-See [CHANGELOG_scamlingua.md](CHANGELOG_scamlingua.md) for notable changes to the site.
+Site change history is maintained internally and is not published in this repository.
+Repository history is available via `git log`.
 
 ## License
 
