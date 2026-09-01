@@ -16,6 +16,9 @@ desktop.ini
 *~
 *.bak
 
-# ---- Internal prompt / working docs (not project docs) ----
-internal_docs
-archived_index_versions
+# ---- Local-only: never pushed ----
+# Canonical names per dev_workflow/CONVENTIONS.md - Repository hygiene.
+internal_docs/
+purgatory/
+# Pre-dates the canonical naming; kept because it is already in use here.
+archived_index_versions/
