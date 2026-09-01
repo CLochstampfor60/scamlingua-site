@@ -67,8 +67,10 @@ Fonts and GoatCounter analytics (see below).
 
 **Dataset requests are accepted exclusively at requests@scamlingua.org.**
 Requests made through GitHub — issues, pull requests, or otherwise — will
-not receive a response. Access is granted by request for non-commercial
-research use; redistribution is not permitted; citation is required:
+not receive a response. All conversations in COVA-X are in English; the
+dataset does not currently include other languages. Access is granted by
+request for non-commercial research use; redistribution is not permitted;
+citation is required:
 
 > Lochstampfor, C., & Roy, A. (2026). COVA-X. arXiv:2606.06879.
 > https://arxiv.org/abs/2606.06879
