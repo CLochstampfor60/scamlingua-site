@@ -299,7 +299,7 @@ p + p{margin-top:.75rem}
 .request-card li{margin-bottom:.4rem}
 .request-card li::marker{color:var(--gold-ink);font-weight:600} /* numerals are read, not decorative */
 .terms-ack{
-  color:var(--muted);
+  color:var(--muted-ink);
   font-size:var(--fs-small);
   margin-top:.75rem;
   line-height:1.6;
