@@ -430,3 +430,14 @@ footer p{line-height:1.75}
   font-size:var(--fs-fine);color:var(--muted-ink);margin-top:.5rem;line-height:1.6;
 }
 @media (max-width:480px){ .sample-record{font-size:.75rem;padding:.9rem .8rem} }
+.request-checklist{
+  margin-top:.9rem;
+  padding:.75rem 1rem .6rem;
+  border:1px dashed var(--line);
+  border-radius:6px;
+  background:var(--paper);
+  font-size:.9375rem;
+}
+.request-checklist ul{margin:.4rem 0 .2rem 1.1rem;padding:0}
+.request-checklist li{margin-bottom:.35rem;line-height:1.55}
+.request-checklist li::marker{color:var(--gold)}

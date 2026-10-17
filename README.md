@@ -20,7 +20,7 @@ adults.
 
 COVA-X is a **synthetic research dataset** — every conversation is
 machine-generated, and it contains no real victim data. It is released for
-non-commercial research use under the access terms below. It is **not** a
+non-commercial defensive research use under the access terms below. It is **not** a
 certified benchmark, a safety or detection product, or legal and compliance
 advice, and it carries no regulatory standing. It is published as independent
 academic research by Carl Lochstampfor (Old Dominion University) and
