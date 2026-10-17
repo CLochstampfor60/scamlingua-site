@@ -316,6 +316,7 @@ p + p{margin-top:.75rem}
   border-radius:6px;
 }
 .verification-note strong{color:var(--ink)}
+.verification-note .fallback-note{display:block;text-align:center;margin-top:.6rem}  /* own centered line so a stuck requester spots it */
 .response-note{
   font-size:var(--fs-lead);  /* one step above body so it stands out */
   font-weight:600;
