@@ -37,6 +37,7 @@ from the research pipeline, or generated conversations.
 | `index.html` | Single-page disclosure site |
 | `styles.css` | Styling (light/dark themes, design tokens, type scale) |
 | `theme.js` | Light/dark mode toggle |
+| `request-template.js` | Pre-filled dataset-request email (single source for the request links) |
 | `favicon.png` | Browser tab icon (SL shield) |
 | `scamlingua_logo.png` / `scamlingua_logo_dark.png` | Wordmark logo (light / dark theme) |
 | `cova_pipeline_architecture.webp` | Generation-methodology figure shown on the page |

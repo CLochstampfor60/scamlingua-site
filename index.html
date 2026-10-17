@@ -63,6 +63,8 @@
 
 <!-- Theme init runs before paint to prevent a flash of the wrong theme. External file to satisfy script-src 'self'. -->
 <script src="theme.js"></script>
+<!-- Pre-filled request email: single source for every data-request-template link. -->
+<script src="request-template.js" defer></script>
 </head>
 
 <body>
@@ -119,7 +121,7 @@
         <dt>Contact (<b>Attn: Carl Lochstampfor</b>)</dt>
         <dd>
           <ul>
-            <li>Dataset access requests: <a href="mailto:requests@scamlingua.org">requests@scamlingua.org</a> &mdash; request a copy of the COVA-X dataset.</li>
+            <li>Dataset access requests: <a href="mailto:requests@scamlingua.org" data-request-template>requests@scamlingua.org</a> &mdash; request a copy of the COVA-X dataset.</li>
             <li>General questions about COVA-X: <a href="mailto:contact@scamlingua.org">contact@scamlingua.org</a> &mdash; questions about the project or dataset.</li>
             <li>Academic &amp; research inquiries: <a href="mailto:cloch001@odu.edu">cloch001@odu.edu</a> &mdash; collaboration or correspondence with the researcher.</li>
           </ul>
@@ -184,7 +186,7 @@
         <h2>Requesting access</h2>
         <p>The dataset is shared by request with researchers and organizations working on fraud detection and prevention. All conversations are in English &mdash; the dataset does not currently include other languages.</p>
         <ol>
-          <li>Email <a href="mailto:requests@scamlingua.org?subject=COVA-X%20dataset%20access%20request&amp;body=Name%3A%20%0D%0AInstitution%20%2F%20affiliation%3A%20%0D%0AProgram%20and%20role%20(e.g.%2C%20MS%20student%2C%20faculty%2C%20researcher)%3A%20%0D%0AIntended%20use%20(project%2C%20paper%2C%20or%20system)%3A%20%0D%0ASupervising%20professor%20(optional%2C%20CC%20welcome)%3A%20%0D%0A%0D%0AI%20confirm%20that%20I%20will%20use%20the%20COVA-X%20dataset%20for%20non-commercial%20defensive%20research%20use%20only%2C%20that%20I%20will%20not%20redistribute%20it%2C%20and%20that%20any%20resulting%20work%20will%20cite%3A%20Lochstampfor%2C%20C.%2C%20%26%20Roy%2C%20A.%20(2026).%20COVA-X.%20arXiv%3A2606.06879.">requests@scamlingua.org</a> (<b>Attn: Carl Lochstampfor</b>) with your name, institutional affiliation, and a brief description of your intended use &mdash; the link opens a pre-filled request template for you.</li>
+          <li>Email <a href="mailto:requests@scamlingua.org" data-request-template>requests@scamlingua.org</a> (<b>Attn: Carl Lochstampfor</b>) with your name, institutional affiliation, and a brief description of your intended use &mdash; the link opens a pre-filled request template for you.</li>
           <li>Access is granted for non-commercial defensive research use &mdash; detection, prevention, and evaluation (see <a href="#responsible-use">Responsible use</a>). Redistribution is not permitted.</li>
           <li>Any publication or product of research using the dataset must cite the reference below.</li>
         </ol>
