@@ -56,10 +56,10 @@ Fonts and GoatCounter analytics (see below).
 
 - Lochstampfor, C., & Roy, A. (2026). *COVA-X: An Expanded Synthetic
   Conversation Dataset for Multi-Turn Smishing Detection.*
-  [arXiv:2606.06879](https://arxiv.org/abs/2606.06879)
+  [arXiv:2606.06879](https://arxiv.org/abs/2606.06879) (preprint; peer review in progress)
 - Lochstampfor, C., & Roy, A. (2026). *A Synthetic Conversational Smishing
   Dataset for Social Engineering Detection.*
-  [arXiv:2604.11752](https://arxiv.org/abs/2604.11752)
+  [arXiv:2604.11752](https://arxiv.org/abs/2604.11752) (preprint; peer review in progress)
 
 ## Contact (Attn: Carl Lochstampfor)
 
