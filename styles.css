@@ -137,16 +137,20 @@ main:focus-visible{outline:none}   /* programmatic focus target — no visible r
 
 /* ---------- Primary call-to-action ---------- */
 .cta-row{margin:0 0 1.5rem}
-.cta{
+/* .cta is the filled button; .cta-secondary the outlined one beside it. Shared box in one rule. */
+.cta,.cta-secondary{
   display:inline-block;
-  background:var(--ink);color:var(--card);
   font-family:"Source Sans 3",system-ui,sans-serif;font-weight:600;font-size:var(--fs-small);
   text-decoration:none;
-  padding:.7rem 1.3rem;border-radius:8px;border:1px solid var(--ink);
+  padding:.7rem 1.3rem;border-radius:8px;
   transition:box-shadow .15s ease,transform .15s ease;
 }
-.cta:hover{color:var(--card);box-shadow:0 0 0 3px var(--gold);transform:translateY(-1px)}
-.cta:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.cta{background:var(--ink);color:var(--card);border:1px solid var(--ink)}
+.cta-secondary{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.cta:hover,.cta-secondary:hover{box-shadow:0 0 0 3px var(--gold);transform:translateY(-1px)}
+.cta:hover{color:var(--card)}
+.cta-secondary:hover{color:var(--ink)}
+.cta:focus-visible,.cta-secondary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
 /* ---------- Theme toggle ---------- */
 #theme-toggle{
@@ -222,7 +226,8 @@ h1::after{
   font-weight:600;
   font-size:var(--fs-base);
 }
-.synthetic-notice .label{
+.synthetic-notice .label,
+.eval-card .label{
   display:block;
   font-family:"IBM Plex Mono",monospace;
   font-size:var(--fs-label);letter-spacing:.06em;text-transform:uppercase;
@@ -345,13 +350,37 @@ p + p{margin-top:.75rem}
 }
 .citation-block strong{font-weight:500} /* Plex Mono 500 reads as bold at this size */
 
-/* ---------- Independent evaluations (reuses .request-card and .status-notice) ---------- */
+/* ---------- Independent evaluations (reuses .request-card, .status-notice, .cta and the .label look) ---------- */
+.eval-intro{margin-bottom:1rem}
+.eval-card{border-top:4px solid var(--accent)}
 .eval-card h3{
   font-family:"Source Sans 3",system-ui,sans-serif;
   font-size:var(--fs-lead);font-weight:600;color:var(--ink);
   line-height:1.4;margin-bottom:.6rem;
 }
-.eval-links{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem 1.75rem;margin-top:.9rem;font-weight:600}.eval-fine{font-size:var(--fs-fine);color:var(--muted-ink);line-height:1.6;margin-top:.9rem}
+/* Fact row. Numbers use the serif display face: Source Sans 3 is only loaded at 400/600,
+   so a 700 sans would be browser-synthesized bold. */
+.eval-facts{
+  list-style:none;display:flex;
+  margin:.9rem 0 1.1rem;padding:.8rem 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.eval-facts li{flex:1 1 0;min-width:0;padding:0 1rem;border-left:1px solid var(--line)}
+.eval-facts li:first-child{padding-left:0;border-left:0}
+.eval-facts .fact{
+  display:block;
+  font-family:"Source Serif 4",Georgia,serif;font-weight:700;
+  font-size:1.5rem;line-height:1.2;color:var(--ink);
+}
+.eval-facts .fact-caption{
+  display:block;margin-top:.2rem;
+  font-family:"IBM Plex Mono",monospace;
+  font-size:var(--fs-label);letter-spacing:.06em;text-transform:uppercase;
+  font-weight:500;line-height:1.4;color:var(--muted-ink);
+  overflow-wrap:break-word;
+}
+.eval-links{list-style:none;display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+.eval-fine{font-size:var(--fs-fine);color:var(--muted-ink);line-height:1.6;margin-top:.9rem}
 .eval-card .status-notice{background:var(--paper);margin:1rem 0 0}  /* card is already --card; paper keeps the notice visible */
 
 /* ---------- Pipeline methodology figure ---------- */
@@ -411,11 +440,17 @@ footer p{line-height:1.75}
   .trust > div{min-width:0}
   .request-card{padding:1.25rem 1.1rem}
   .status-notice{padding:.9rem 1rem;margin-bottom:2rem}
+  /* Three columns are too narrow for the captions here: stack, number beside caption */
+  .eval-facts{flex-direction:column;gap:.55rem}
+  .eval-facts li{display:flex;align-items:baseline;gap:.7rem;padding:0;border-left:0}
+  .eval-facts li + li{border-top:1px solid var(--line);padding-top:.55rem}
+  .eval-facts .fact{flex:0 0 4.5rem}
+  .eval-facts .fact-caption{margin-top:0}
 }
 
 /* ---------- Print ---------- */
 @media print{
-  #theme-toggle,.skip-link,.cta{display:none}
+  #theme-toggle,.skip-link,.cta-row .cta{display:none}  /* hide the in-page jump only; the PDF buttons stay */
   body{background:#fff;color:#000}
   header,footer,.request-card,.status-notice{background:#fff}
   a{color:#000;text-decoration:underline}
