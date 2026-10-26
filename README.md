@@ -26,6 +26,8 @@ advice, and it carries no regulatory standing. It is published as independent
 academic research by Carl Lochstampfor (Old Dominion University) and
 Dr. Ayan Roy (Christopher Newport University).
 
+The site also hosts independent evaluation reports, published in `reports/`.
+
 ## What this repository is (and isn't)
 
 This repository contains **only the static website** served at scamlingua.org
@@ -42,6 +44,7 @@ from the research pipeline, or generated conversations.
 | `scamlingua_logo.png` / `scamlingua_logo_dark.png` | Wordmark logo (light / dark theme) |
 | `cova_pipeline_architecture.webp` | Generation-methodology figure shown on the page |
 | `og-card.png` | Social share card (Open Graph / link previews) |
+| `reports/` | Published evaluation reports (PDF) |
 | `robots.txt` / `sitemap.xml` | Crawler configuration |
 | `CNAME` | GitHub Pages custom-domain binding |
 | `LICENSE` | MIT license covering the website source only |

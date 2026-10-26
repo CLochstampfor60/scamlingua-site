@@ -345,6 +345,15 @@ p + p{margin-top:.75rem}
 }
 .citation-block strong{font-weight:500} /* Plex Mono 500 reads as bold at this size */
 
+/* ---------- Independent evaluations (reuses .request-card and .status-notice) ---------- */
+.eval-card h3{
+  font-family:"Source Sans 3",system-ui,sans-serif;
+  font-size:var(--fs-lead);font-weight:600;color:var(--ink);
+  line-height:1.4;margin-bottom:.6rem;
+}
+.eval-links{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem 1.75rem;margin-top:.9rem;font-weight:600}.eval-fine{font-size:var(--fs-fine);color:var(--muted-ink);line-height:1.6;margin-top:.9rem}
+.eval-card .status-notice{background:var(--paper);margin:1rem 0 0}  /* card is already --card; paper keeps the notice visible */
+
 /* ---------- Pipeline methodology figure ---------- */
 /* Diagram is composited on white so it stays legible in both light and dark themes. */
 .pipeline-figure{margin:1.25rem 0 .25rem}

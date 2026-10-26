@@ -181,6 +181,42 @@
       <p class="sample-caption">Illustrative structure only — field names and format match the dataset; values shown are placeholders. Full schema documentation accompanies each data distribution.</p>
     </section>
 
+    <section id="evaluations">
+      <div class="request-card eval-card">
+        <h2>Independent evaluations</h2>
+        <h3>Tuteliq text-safety detection: Phase 1 (October 2026)</h3>
+        <p>
+          In September and October 2026, Carl Lochstampfor ran an independent black-box evaluation
+          of Tuteliq's text-safety detection API, with Dr. Ayan Roy (Christopher Newport University)
+          as second evaluator. The test set had 1,294 synthetic multi-turn conversations and 50
+          single messages across five harm categories: romance scams, social engineering, coercive
+          control, bullying, and self-harm and emotional distress. The conversations were generated
+          locally with an open-weight language model (Gemma 3 12B).
+        </p>
+        <p>
+          Romance scams, coercive control and self-harm were detected in 96% to 100% of harmful
+          conversations, with false alarms at or below 6.9%. Social engineering was the weakest
+          category (83.8% detected, 15.9% false alarms). Both reports are published with Tuteliq's
+          permission, weaknesses included.
+        </p>
+        <ul class="eval-links">
+          <li><a href="reports/Tuteliq_Evaluation_Summary_Public_Final_2026-10-26_v1.0.pdf" target="_blank" rel="noopener noreferrer">Public summary (PDF, 8 pages)</a></li>
+          <li><a href="reports/Tuteliq_Evaluation_Report_Full_Final_2026-10-26_v1.0.pdf" target="_blank" rel="noopener noreferrer">Full report (PDF, 36 pages)</a></li>
+        </ul>
+        <p class="eval-fine">
+          Results are from synthetic, English-language text conversations (detector
+          tuteliq-detect-v5.20261015, tested October 19, 2026). This is an independent evaluation,
+          not a certification, accreditation or audit. Quote figures only as set out in the claims
+          register in each report.
+        </p>
+        <div class="status-notice" role="note">
+          <strong>Coming before the end of 2026:</strong> the five-category evaluation dataset behind
+          these reports will be added to ScamLingua, with its own access terms. Like COVA-X, every
+          conversation is synthetic.
+        </div>
+      </div>
+    </section>
+
     <section id="request">
       <div class="request-card">
         <h2>Requesting access</h2>
