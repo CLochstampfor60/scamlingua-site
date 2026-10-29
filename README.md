@@ -44,7 +44,7 @@ from the research pipeline, or generated conversations.
 | `scamlingua_logo.png` / `scamlingua_logo_dark.png` | Wordmark logo (light / dark theme) |
 | `cova_pipeline_architecture.webp` | Generation-methodology figure shown on the page |
 | `og-card.png` | Social share card (Open Graph / link previews) |
-| `reports/` | Published evaluation reports (PDF) |
+| `reports/` | Published evaluation reports (PDF), including the Phase 1 erratum (v1.1) |
 | `robots.txt` / `sitemap.xml` | Crawler configuration |
 | `CNAME` | GitHub Pages custom-domain binding |
 | `LICENSE` | MIT license covering the website source only |
